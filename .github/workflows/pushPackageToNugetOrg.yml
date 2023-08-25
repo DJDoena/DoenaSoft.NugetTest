@@ -28,9 +28,6 @@ jobs:
         env:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
           
-      - name: Build AnyCPU
-        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental /p:Platform=AnyCPU
-
       - name: Build x64
         run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental /p:Platform=x64
 
