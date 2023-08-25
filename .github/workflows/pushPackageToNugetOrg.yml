@@ -1,0 +1,44 @@
+#In this script it is important to set the RepositoryUrl in the *.csproj file
+
+name: NuGet Generation for DoenaSoft
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+      
+env:
+  SOURCE_URL: https://api.nuget.org/v3/index.json
+  PROJECT_FILE: DoenaSoft.NugetTest.csproj
+  PROJECT_FOLDER: DoenaSoft.NugetTest
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Update NuGet package
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+     
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          source-url: ${{env.SOURCE_URL}}  
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}        
+          
+      - name: Build AnyCPU
+        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental  
+
+      - name: Build x64
+        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release--no-incremental -r=x64
+
+      - name: Build x86
+        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release--no-incremental -r=x86
+
+      - name: Pack
+        run: dotnet pack ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} --no-build -c=Release -o=./
+          
+      - name: Push generated package to Nuget.org
+        run: dotnet nuget push ./*.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source "${{env.SOURCE_URL}}" --skip-duplicate --no-symbols
