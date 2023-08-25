@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net481</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<Platforms>x64;x86;AnyCPU</Platforms>
+		<RootNamespace>DoenaSoft.NugetTest</RootNamespace>
+		<AssemblyName>DoenaSoft.NugetTest</AssemblyName>
+		<Configurations>Release</Configurations>
+		<Title>$(AssemblyName)</Title>
+		<Company>DoenaSoft.</Company>
+	</PropertyGroup>
+
+</Project>
