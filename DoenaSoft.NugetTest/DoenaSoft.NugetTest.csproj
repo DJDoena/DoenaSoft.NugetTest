@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net472;net60;netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>net472;net60</TargetFrameworks>
 		<Platforms>x64;x86;AnyCPU</Platforms>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
@@ -14,9 +14,9 @@
 		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.8</AssemblyVersion>
-		<FileVersion>1.0.8</FileVersion>
-		<Version>1.0.8</Version>
+		<AssemblyVersion>1.0.9</AssemblyVersion>
+		<FileVersion>1.0.9</FileVersion>
+		<Version>1.0.9</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,9 +33,6 @@
 		<None Include="bin\x86\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net6.0\x86\DoenaSoft.NugetTest.dll" />
 		<!-- AnyCPU does not need to be listed here separately -->
 
-		<None Include="bin\x64\Release\netstandard2.0\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\netstandard2.0\x64\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\x86\Release\netstandard2.0\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\netstandard2.0\x86\DoenaSoft.NugetTest.dll" />
-		<!-- AnyCPU does not need to be listed here separately -->
 	</ItemGroup>
 
 	<ItemGroup>
