@@ -3,7 +3,7 @@
 	<Target Name="InjectReference_DoenaSoft_NugetTest" BeforeTargets="ResolveAssemblyReferences">
 		<ItemGroup Condition="('$(Platform)'=='x86' OR '$(Platform)'=='x64')">
 			<Reference Include="DoenaSoft.NugetTest">
-				<HintPath>$(MSBuildThisFileDirectory)..\..\lib\$(TargetFramework)\$(Platform)\DoenaSoft.NugetTest.dll</HintPath>
+				<HintPath>$(MSBuildThisFileDirectory)..\lib\$(TargetFramework)\$(Platform)\DoenaSoft.NugetTest.dll</HintPath>
 			</Reference>
 		</ItemGroup>
 	</Target>
