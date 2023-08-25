@@ -1,7 +1,7 @@
 ﻿namespace DoenaSoft.NugetTest
 {
-    public class Class1
+    public static class Hello
     {
-
+        public static string World() => "Hello World!";
     }
 }
