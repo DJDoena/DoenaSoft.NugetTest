@@ -1,6 +1,6 @@
 #In this script it is important to set the RepositoryUrl in the *.csproj file
 
-name: NuGet Generation for DoenaSoft
+name: NuGet Generation for DoenaSoft.NugetTest
 
 on:
   push:
@@ -26,16 +26,16 @@ jobs:
         with:
           source-url: ${{env.SOURCE_URL}}  
         env:
-          NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}        
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
           
       - name: Build AnyCPU
-        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental  
+        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental /p:Platform=AnyCPU
 
       - name: Build x64
-        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental -r=x64
+        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental /p:Platform=x64
 
       - name: Build x86
-        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental -r=x86
+        run: dotnet build ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} -c=Release --no-incremental /p:Platform=x86
 
       - name: Pack
         run: dotnet pack ${{ env.PROJECT_FOLDER }}/${{ env.PROJECT_FILE }} --no-build -c=Release -o=./

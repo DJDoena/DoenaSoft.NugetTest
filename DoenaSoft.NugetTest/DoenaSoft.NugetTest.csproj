@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net481;net60</TargetFrameworks>
@@ -13,18 +13,18 @@
 		<PackageProjectUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.3</AssemblyVersion>
-		<FileVersion>1.0.3</FileVersion>
-		<Version>1.0.3</Version>
+		<AssemblyVersion>1.0.4</AssemblyVersion>
+		<FileVersion>1.0.4</FileVersion>
+		<Version>1.0.4</Version>
 	</PropertyGroup>
 	
 	<ItemGroup>
-		<None Include="bin\Release\net481\x64\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x64\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\Release\net481\x64\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x64\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x86\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
 		<None Include="bin\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\AnyCPU\DoenaSoft.NugetTest.dll" />
 
-		<None Include="bin\Release\net60\x64\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x64\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\Release\net60\x64\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x64\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x86\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
 		<None Include="bin\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\AnyCPU\DoenaSoft.NugetTest.dll" />
 	</ItemGroup>
 	
