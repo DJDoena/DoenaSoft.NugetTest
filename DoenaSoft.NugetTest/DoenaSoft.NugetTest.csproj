@@ -8,8 +8,24 @@
 		<RootNamespace>DoenaSoft.NugetTest</RootNamespace>
 		<AssemblyName>DoenaSoft.NugetTest</AssemblyName>
 		<Configurations>Release</Configurations>
-		<Title>$(AssemblyName)</Title>
+		<Title>DoenaSoft.NugetTest</Title>
 		<Company>DoenaSoft.</Company>
+		<PackageProjectUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<Version>1.0.0</Version>
 	</PropertyGroup>
+	
+	<ItemGroup>
+		<None Include="bin\Release\net481\x64\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\Release\net481\x64\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\AnyCPU\DoenaSoft.NugetTest.dll" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<Content Include="DoenaSoft.NugetTest.targets" Pack="true" PackagePath="build\DoenaSoft.NugetTest.targets" />
+	</ItemGroup>
 
 </Project>
