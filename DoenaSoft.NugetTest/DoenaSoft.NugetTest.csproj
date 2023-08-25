@@ -13,9 +13,9 @@
 		<PackageProjectUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.4</AssemblyVersion>
-		<FileVersion>1.0.4</FileVersion>
-		<Version>1.0.4</Version>
+		<AssemblyVersion>1.0.5</AssemblyVersion>
+		<FileVersion>1.0.5</FileVersion>
+		<Version>1.0.5</Version>
 	</PropertyGroup>
 	
 	<ItemGroup>
@@ -23,9 +23,9 @@
 		<None Include="bin\x86\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
 		<None Include="bin\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\AnyCPU\DoenaSoft.NugetTest.dll" />
 
-		<None Include="bin\x64\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x64\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\x86\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\x86\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net481\AnyCPU\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x64\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net60\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x86\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net60\x86\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="build\net60\AnyCPU\DoenaSoft.NugetTest.dll" />
 	</ItemGroup>
 	
 	<ItemGroup>
