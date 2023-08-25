@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net481;net60</TargetFrameworks>
+		<TargetFrameworks>net472;net60;netstandard2.0</TargetFrameworks>
 		<Platforms>x64;x86;AnyCPU</Platforms>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
@@ -14,9 +14,9 @@
 		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.7</AssemblyVersion>
-		<FileVersion>1.0.7</FileVersion>
-		<Version>1.0.7</Version>
+		<AssemblyVersion>1.0.8</AssemblyVersion>
+		<FileVersion>1.0.8</FileVersion>
+		<Version>1.0.8</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -25,12 +25,16 @@
 			<PackagePath>\</PackagePath>
 		</None>
 
-		<None Include="bin\x64\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net481\x64\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\x86\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net481\x86\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x64\Release\net472\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net472\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x86\Release\net472\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net472\x86\DoenaSoft.NugetTest.dll" />
 		<!-- AnyCPU does not need to be listed here separately -->
 
 		<None Include="bin\x64\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net6.0\x64\DoenaSoft.NugetTest.dll" />
 		<None Include="bin\x86\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net6.0\x86\DoenaSoft.NugetTest.dll" />
+		<!-- AnyCPU does not need to be listed here separately -->
+
+		<None Include="bin\x64\Release\netstandard2.0\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\netstandard2.0\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x86\Release\netstandard2.0\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\netstandard2.0\x86\DoenaSoft.NugetTest.dll" />
 		<!-- AnyCPU does not need to be listed here separately -->
 	</ItemGroup>
 
