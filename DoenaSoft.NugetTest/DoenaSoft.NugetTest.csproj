@@ -14,9 +14,9 @@
 		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.12</AssemblyVersion>
-		<FileVersion>1.0.12</FileVersion>
-		<Version>1.0.12</Version>
+		<AssemblyVersion>1.0.11</AssemblyVersion>
+		<FileVersion>1.0.11</FileVersion>
+		<Version>1.0.11</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -25,8 +25,8 @@
 			<PackagePath>\</PackagePath>
 		</None>
 
-		<None Include="bin\x64\Release\net472\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net472\x64\DoenaSoft.NugetTest.dll" />
-		<None Include="bin\x86\Release\net472\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net472\x86\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x64\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net481\x64\DoenaSoft.NugetTest.dll" />
+		<None Include="bin\x86\Release\net481\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net481\x86\DoenaSoft.NugetTest.dll" />
 		<!-- AnyCPU does not need to be listed here separately -->
 
 		<None Include="bin\x64\Release\net60\DoenaSoft.NugetTest.dll" Pack="true" PackagePath="lib\net6.0\x64\DoenaSoft.NugetTest.dll" />
