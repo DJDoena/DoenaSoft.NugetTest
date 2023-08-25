@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net481</TargetFramework>
-		<OutputType>Library</OutputType>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<TargetFrameworks>net481;net60</TargetFrameworks>
 		<Platforms>x64;x86;AnyCPU</Platforms>
+		<OutputType>Library</OutputType>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<RootNamespace>DoenaSoft.NugetTest</RootNamespace>
 		<AssemblyName>DoenaSoft.NugetTest</AssemblyName>
 		<Configurations>Release</Configurations>
@@ -13,9 +13,9 @@
 		<PackageProjectUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.NugetTest</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<AssemblyVersion>1.0.1</AssemblyVersion>
-		<FileVersion>1.0.1</FileVersion>
-		<Version>1.0.1</Version>
+		<AssemblyVersion>1.0.2</AssemblyVersion>
+		<FileVersion>1.0.2</FileVersion>
+		<Version>1.0.2</Version>
 	</PropertyGroup>
 	
 	<ItemGroup>
